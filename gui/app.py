@@ -17,15 +17,15 @@ class Window:
         self.main_panel.add(self.main_frame)
 
         label = tk.Label(self.main_frame, text="Welcome to the Wahrolator!", justify="center")
-        label.config(font=("Arial", 25), bg="#1d1d1d")
+        label.config(font=("Arial", 25), bg="#1d1d1d", fg="white")
         label.pack(pady=(20, 0))
         
         sub = tk.Label(self.main_frame, text="No image opened yet.", justify="center")
         sub.config(font=("Arial", 15), fg="gray", bg="#1d1d1d")
         sub.pack(pady=(0, 40))
 
-        button = tk.Button(self.main_frame, justify="center", text="Open image")
-        button.config(font=("Arial", 18), bg="#1d1d1d")
+        button = tk.Button(self.main_frame, justify="center", text="Open image", bg="#000000", borderwidth=0)
+        button.config(font=("Arial", 18), fg="#4db8ff")
         button.pack()
 
         self.context.mainloop()
